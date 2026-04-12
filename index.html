@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>NRBC Formation Initiale</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🧪 NRBC - Formation Initiale Opérationnelle</h1>
+  <p>Apprentissage + cas concrets + entraînement RP</p>
+</header>
+
+<nav>
+  <button onclick="openTab('cours')">📘 Cours</button>
+  <button onclick="openTab('cas')">🪖 Cas concrets</button>
+  <button onclick="openTab('quiz')">🧠 Quiz final</button>
+</nav>
+
+<!-- 📘 COURS -->
+<section id="cours" class="tab active">
+
+  <h2>📘 Introduction NRBC</h2>
+  <p>
+    Le NRBC regroupe les risques Nucléaires, Radiologiques, Biologiques et Chimiques.
+    Ces risques peuvent être accidentels ou intentionnels et nécessitent une réaction structurée.
+  </p>
+
+  <h3>☢️ Nucléaire</h3>
+  <p>Explosion ou réaction nucléaire libérant une énergie massive et des radiations.</p>
+
+  <h3>☢️ Radiologique</h3>
+  <p>Exposition à des rayonnements ionisants sans explosion nucléaire.</p>
+
+  <h3>🧬 Biologique</h3>
+  <p>Agents pathogènes (virus, bactéries) pouvant se propager rapidement.</p>
+
+  <h3>☣️ Chimique</h3>
+  <p>Gaz ou substances toxiques pouvant provoquer intoxications ou brûlures.</p>
+
+</section>
+
+<!-- 🪖 CAS CONCRETS -->
+<section id="cas" class="tab">
+
+  <h2>🪖 Cas concrets RP (entraînement terrain)</h2>
+
+  <div id="caseBox">
+
+    <p id="caseText">Clique sur "Démarrer un exercice"</p>
+
+    <div id="caseChoices"></div>
+
+    <p id="caseFeedback"></p>
+
+  </div>
+
+  <button onclick="startCase()">🎯 Démarrer</button>
+  <button onclick="nextCase()">➡️ Suivant</button>
+
+</section>
+
+<!-- 🧠 QUIZ FINAL -->
+<section id="quiz" class="tab">
+
+  <h2>🧠 Quiz final NRBC</h2>
+
+  <p id="question">Clique sur démarrer</p>
+
+  <div id="answers"></div>
+
+  <p id="explanation"></p>
+
+  <button onclick="startQuiz()">🎮 Démarrer le quiz</button>
+  <button onclick="nextQuestion()">➡️ Question suivante</button>
+
+  <h3 id="finalScore"></h3>
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
