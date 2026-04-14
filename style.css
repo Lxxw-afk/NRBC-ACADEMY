@@ -29,7 +29,7 @@ header.topbar {
     linear-gradient(rgba(8, 12, 22, 0.75), rgba(8, 12, 22, 0.75)),
     url("./images/topbar-bg.jpg");
 
-  background-position: center;
+  background-position: center 70%;
   background-size: cover;
   background-repeat: no-repeat;
 
