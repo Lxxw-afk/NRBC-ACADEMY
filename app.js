@@ -26,9 +26,7 @@ function unlockExpectations(caseId) {
 
   const correctCode = "NRBC2026";
 
-  if (!input || !box || !message) {
-    return;
-  }
+  if (!input || !box || !message) return;
 
   if (input.value === correctCode) {
     box.classList.add("visible");
