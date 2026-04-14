@@ -82,7 +82,7 @@ const questions = [
   {
     q: "Le NRBC biologique est toujours visible ?",
     a: [
-      { t: "Vrai", c: false },
+      { t: "Vrai.", c: false },
       { t: "Faux", c: true }
     ],
     e: "Les agents biologiques sont invisibles."
