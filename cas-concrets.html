@@ -1,1 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NRBC Academy - Cas concrets</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+  <header class="topbar">
+    <div class="topbar-overlay">
+      <h1>🪖 Cas concrets NRBC</h1>
+      <p class="topbar-subtitle">Entraînement RP et documentation opérationnelle</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html" data-transition="true">Accueil</a>
+    <a href="radiologique.html" data-transition="true">Radiologique</a>
+    <a href="biologique.html" data-transition="true">Biologique</a>
+    <a href="chimique.html" data-transition="true">Chimique</a>
+    <a href="zone-exclusion.html" data-transition="true">Zone d'exclusion</a>
+    <a href="cas-concrets.html" data-transition="true">Cas concrets</a>
+    <a href="quiz.html" data-transition="true">Quiz final</a>
+  </nav>
+
+  <main>
+
+    <section class="card">
+      <h2>Cas radiologique n°1 — Colis suspect</h2>
+
+      <p><strong>Situation :</strong><br>
+      Un colis a été ouvert à la Brigade. Un objet à l’intérieur émet un son étrange.</p>
+
+      <p><strong>Objectif :</strong><br>
+      Identifier le risque, mise en place du zonage et protéger le personnel.</p>
+
+      <p><strong>Informations particulières reçues :</strong><br>
+      Si les candidats posent des questions, ils apprendront que l’objet a été manipulé par un des personnels.
+      Le personnel n’a aucun symptôme visible.</p>
+
+      <div class="hidden-box">
+        <p class="notice">Accès réservé formateur / CDU</p>
+        <input type="password" id="code-case1" placeholder="Code d’accès">
+        <button onclick="unlockExpectations('case1')">Voir les attentes</button>
+        <p id="message-case1"></p>
+
+        <div class="hidden-content" id="expectations-case1">
+          <h3>Attentes</h3>
+          <ul>
+            <li>Isolement immédiat de l’objet</li>
+            <li>Isolement du bâtiment</li>
+            <li>Effectuer des relevés : radiamètre pour la pièce / contaminamètre pour l’objet</li>
+            <li>Isolement des personnels</li>
+            <li>Isolement à l’écart du contaminé</li>
+            <li>Confinement total du bâtiment</li>
+            <li>Prévenir les unités sanitaires</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cas radiologique n°2 — Boîte sur un chantier</h2>
+
+      <p><strong>Situation :</strong><br>
+      Un ouvrier découvre sur un chantier une boîte fermée avec le symbole de risque radiologique.
+      Le chef de chantier appelle en urgence la Gendarmerie. Une fois sur place, ils apprennent qu’un ouvrier a ouvert la boîte.</p>
+
+      <p><strong>Objectif :</strong><br>
+      Identifier le risque, mise en place du zonage, identifier l’exposition multiple et protéger les personnels.</p>
+
+      <div class="hidden-box">
+        <p class="notice">Accès réservé formateur / CDU</p>
+        <input type="password" id="code-case2" placeholder="Code d’accès">
+        <button onclick="unlockExpectations('case2')">Voir les attentes</button>
+        <p id="message-case2"></p>
+
+        <div class="hidden-content" id="expectations-case2">
+          <h3>Attentes</h3>
+          <ul>
+            <li>Isolement immédiat de l’objet</li>
+            <li>Effectuer des relevés : contaminamètre pour l’objet et les personnels</li>
+            <li>Isolement des personnels</li>
+            <li>Regroupement des exposés</li>
+            <li>Prévenir les unités sanitaires</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cas radiologique n°3 — AVP VL / PL</h2>
+
+      <p><strong>Situation :</strong><br>
+      Un véhicule transportant du matériel médical est accidenté (AVP PL / VL). Aucune information de risque radiologique
+      n’est donnée par le chauffeur ni identifiée sur le véhicule. L’information est présente sur le bon de livraison.
+      Le chauffeur du PL est choqué, le conducteur VL est dans un état grave. Route fortement fréquentée.</p>
+
+      <p><strong>Objectif :</strong><br>
+      Identifier le risque, mise en place du zonage (100 m +), identifier l’exposition multiple, prise en charge des victimes
+      et isolement des victimes.</p>
+
+      <p><strong>Possibilité évolutive :</strong><br>
+      Fuite active.</p>
+
+      <div class="hidden-box">
+        <p class="notice">Accès réservé formateur / CDU</p>
+        <input type="password" id="code-case3" placeholder="Code d’accès">
+        <button onclick="unlockExpectations('case3')">Voir les attentes</button>
+        <p id="message-case3"></p>
+
+        <div class="hidden-content" id="expectations-case3">
+          <h3>Attentes</h3>
+          <ul>
+            <li>Isolement immédiat du PL</li>
+            <li>Effectuer des relevés : contaminamètre pour l’objet et les personnels</li>
+            <li>Isolement des personnels</li>
+            <li>Regroupement des exposés</li>
+            <li>Prévenir les unités sanitaires</li>
+            <li>Gestion d’un zonage large</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cas chimique n°1 — Baignade forte en chlore</h2>
+
+      <p><strong>Situation :</strong><br>
+      La piscine municipale en centre ville d’Evry signale une fuite de chlore.
+      Sur place, plusieurs victimes sont au sol. Les témoins parlent d’une forte odeur.
+      Si les candidats n’ont pas le masque, ils sentent une odeur forte également.</p>
+
+      <p><strong>Objectif :</strong><br>
+      Identifier l’agent chimique, trouver la source (piscine au fond du Human), mettre en place le zonage.</p>
+
+      <div class="hidden-box">
+        <p class="notice">Accès réservé formateur / CDU</p>
+        <input type="password" id="code-case4" placeholder="Code d’accès">
+        <button onclick="unlockExpectations('case4')">Voir les attentes</button>
+        <p id="message-case4"></p>
+
+        <div class="hidden-content" id="expectations-case4">
+          <h3>Attentes</h3>
+          <ul>
+            <li>Positionnement par rapport au vent</li>
+            <li>Matériel utilisé pour les relevés : détecteur PID / détecteur multigaz / tubes colorimétriques</li>
+            <li>Évacuation immédiate</li>
+            <li>Regroupement des exposés</li>
+            <li>Prévenir les unités sanitaires</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cas chimique n°2 — AVP PL seul</h2>
+
+      <p><strong>Situation :</strong><br>
+      Un PL identifié comme transportant des produits chimiques est accidenté. AVP seul.
+      Un témoin sur place appelle la Gendarmerie. Une fuite est visible à leur arrivée.
+      Le produit s’écoule dans les évacuations d’eau de pluie.</p>
+
+      <p><strong>Objectif :</strong><br>
+      Identifier l’agent chimique (ce sera un sanguin ou un vésicant), mettre en place le zonage,
+      identifier l’exposition multiple (chauffeur et témoin), mettre en place un barrage pour contenir l’écoulement dans les eaux.</p>
+
+      <p><strong>Possibilité évolutive :</strong><br>
+      Apparition d’un nuage. Le témoin présente les premiers symptômes.</p>
+
+      <div class="hidden-box">
+        <p class="notice">Accès réservé formateur / CDU</p>
+        <input type="password" id="code-case5" placeholder="Code d’accès">
+        <button onclick="unlockExpectations('case5')">Voir les attentes</button>
+        <p id="message-case5"></p>
+
+        <div class="hidden-content" id="expectations-case5">
+          <h3>Attentes</h3>
+          <ul>
+            <li>Positionnement par rapport au vent</li>
+            <li>Matériel utilisé pour les relevés : détecteur PID et FID / détecteur multigaz / tubes colorimétriques / détecteur CWA</li>
+            <li>S’assurer que ce n’est pas une fuite d’hydrocarbure</li>
+            <li>Évacuation immédiate</li>
+            <li>Regroupement des exposés</li>
+            <li>Prévenir les unités sanitaires</li>
+            <li>Prévenir les hautes autorités pour l’évacuation dans les eaux publiques</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cas chimique n°3 — Attentat dans le métro</h2>
+
+      <p><strong>Situation :</strong><br>
+      La Gendarmerie reçoit de nombreux appels signalant plusieurs personnes qui tombent de manière presque simultanée
+      dans une station de métro. Arrivés sur place, une dizaine de personnes sont au sol, elles convulsent.
+      Un état de panique est visible.</p>
+
+      <p><strong>Objectif :</strong><br>
+      Reconnaissance NRBC, identifier l’agent chimique (neurotoxique), mettre en place le zonage,
+      gestion de l’évacuation, gestion de multiples victimes.</p>
+
+      <p><strong>Possibilité évolutive :</strong><br>
+      Possibilité de cas similaires à la station d’à côté. Les personnels de la station se mettent à tomber.</p>
+
+      <div class="hidden-box">
+        <p class="notice">Accès réservé formateur / CDU</p>
+        <input type="password" id="code-case6" placeholder="Code d’accès">
+        <button onclick="unlockExpectations('case6')">Voir les attentes</button>
+        <p id="message-case6"></p>
+
+        <div class="hidden-content" id="expectations-case6">
+          <h3>Attentes</h3>
+          <ul>
+            <li>Matériel utilisé pour les relevés : détecteur CWA</li>
+            <li>Évacuation immédiate</li>
+            <li>Regroupement des exposés</li>
+            <li>Prévenir les unités sanitaires</li>
+            <li>Prévenir les hautes autorités</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cas biologique n°1 — Un fan trop fan</h2>
+
+      <p><strong>Situation :</strong><br>
+      Une chanteuse d’un bar de Cergy reçoit un colis d’un fan à son domicile.
+      Dans le colis se trouve une poudre suspecte de couleur blanche.</p>
+
+      <p><strong>Objectif :</strong><br>
+      Identifier l’agent biologique, mettre en place le zonage, identifier l’exposition multiple, mettre en confinement.</p>
+
+      <p><strong>Possibilité évolutive :</strong><br>
+      Dans le domicile se trouvent son mari et ses deux enfants.
+      Un des enfants dit ne pas s’être approché du colis, la femme le confirme.
+      Ils ne présentent aucun symptôme. Le mari est sur son lieu de travail.</p>
+
+      <div class="hidden-box">
+        <p class="notice">Accès réservé formateur / CDU</p>
+        <input type="password" id="code-case7" placeholder="Code d’accès">
+        <button onclick="unlockExpectations('case7')">Voir les attentes</button>
+        <p id="message-case7"></p>
+
+        <div class="hidden-content" id="expectations-case7">
+          <h3>Attentes</h3>
+          <ul>
+            <li>Ne pas toucher</li>
+            <li>Confinement</li>
+            <li>Isolement des personnes dans le domicile</li>
+            <li>Confinement du lieu de travail du mari par radio</li>
+            <li>Regroupement des personnes exposées</li>
+            <li>Prévenir les unités sanitaires</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cas biologique n°2 — Achat de produit bio</h2>
+
+      <p><strong>Situation :</strong><br>
+      La BSPP reçoit un appel disant que plusieurs personnes se sentent mal dans un centre commercial à Corbeil-Essonne.
+      Demande à la Gendarmerie de confirmer l’appel pensant à un canular.
+      Une PAM se présente sur les lieux et constate plusieurs personnes présentant une difficulté respiratoire.
+      Au moins 20 personnes ont les mêmes symptômes. Il n’y a aucune cause visible.</p>
+
+      <p><strong>Objectif :</strong><br>
+      Identifier l’agent biologique, mettre en place le zonage, identifier l’exposition multiple, mettre en confinement.</p>
+
+      <p><strong>Possibilité évolutive :</strong><br>
+      Le nombre de cas augmente dans le centre commercial.
+      Le SAMU reçoit des appels informant de cas similaires dans Corbeil-Essonne.</p>
+
+      <div class="hidden-box">
+        <p class="notice">Accès réservé formateur / CDU</p>
+        <input type="password" id="code-case8" placeholder="Code d’accès">
+        <button onclick="unlockExpectations('case8')">Voir les attentes</button>
+        <p id="message-case8"></p>
+
+        <div class="hidden-content" id="expectations-case8">
+          <h3>Attentes</h3>
+          <ul>
+            <li>Ne pas toucher</li>
+            <li>Confinement</li>
+            <li>Isolement des personnes dans le centre commercial</li>
+            <li>Isoler la PAM primo-intervenante ailleurs</li>
+            <li>Laisser les unités sanitaires gérer Corbeil-Essonne</li>
+            <li>Regroupement des personnes exposées</li>
+            <li>Prévenir les unités sanitaires</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cas biologique n°3 — Petite visite à risque</h2>
+
+      <p><strong>Situation :</strong><br>
+      Deux PAM, un PSIG, un OPJ et le Procureur se rendent dans une maison dans le Nord de Paris pour une perquisition.
+      Le suspect est connu pour de multiples braquages. Sur place, un laboratoire clandestin est découvert avec présence
+      de poudre blanche et de boîtes de pétri non vides. Déclenchement immédiat de la NRBC.</p>
+
+      <p><strong>Objectif :</strong><br>
+      Identifier l’agent biologique, mettre en place le zonage, identifier l’exposition multiple,
+      mettre en confinement hors de la maison, sécurisation de la scène.</p>
+
+      <p><strong>Possibilité évolutive :</strong><br>
+      Un complice du braqueur présente des difficultés respiratoires en prison
+      s’ils se renseignent sur le nombre de personnes dans la maison.</p>
+
+      <div class="hidden-box">
+        <p class="notice">Accès réservé formateur / CDU</p>
+        <input type="password" id="code-case9" placeholder="Code d’accès">
+        <button onclick="unlockExpectations('case9')">Voir les attentes</button>
+        <p id="message-case9"></p>
+
+        <div class="hidden-content" id="expectations-case9">
+          <h3>Attentes</h3>
+          <ul>
+            <li>Ne pas toucher</li>
+            <li>Confinement</li>
+            <li>Isolement des personnes : PAM, PSIG, OPJ et Procureur compris</li>
+            <li>Protection des éléments de preuve</li>
+            <li>Regroupement des personnes exposées</li>
+            <li>Prévenir les unités sanitaires</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Créé par Julien FLAMENT | Lxxw
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
