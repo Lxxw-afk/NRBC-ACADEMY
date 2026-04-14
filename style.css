@@ -295,3 +295,27 @@ footer {
     padding: 16px 12px 30px;
   }
 }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  background: #11192a;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+nav a {
+  background: #1b2236;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.2s ease;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  background: #2a3555;
+  transform: translateY(-2px);
+}
