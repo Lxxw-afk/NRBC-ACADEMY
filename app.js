@@ -133,5 +133,42 @@ function nextQuestion() {
       "Score final : " + score;
   } else {
     showQ();
+
+    document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("page-visible");
+
+  document.querySelectorAll('a[data-transition="true"]').forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      if (!href || href.startsWith("#") || this.target === "_blank") return;
+
+      e.preventDefault();
+      document.body.classList.remove("page-visible");
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 250);
+    });
+  });
+});
+
+function unlockExpectations(caseId) {
+  const input = document.getElementById(`code-${caseId}`);
+  const box = document.getElementById(`expectations-${caseId}`);
+  const message = document.getElementById(`message-${caseId}`);
+
+  const correctCode = "NRBC2026";
+
+  if (input.value === correctCode) {
+    box.classList.add("visible");
+    message.textContent = "Accès autorisé.";
+    message.style.color = "lightgreen";
+  } else {
+    box.classList.remove("visible");
+    message.textContent = "Code incorrect.";
+    message.style.color = "#ff7b7b";
+  }
+}
   }
 }
