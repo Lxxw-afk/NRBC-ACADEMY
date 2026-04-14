@@ -14,13 +14,25 @@ body {
   min-height: 100vh;
 }
 
+/* ========================= */
+/* TOPBAR */
+/* ========================= */
+
 header.topbar {
   position: relative;
-  padding: 28px 20px;
+  padding: 30px 20px;
   text-align: center;
-  background:
-    linear-gradient(rgba(8, 12, 22, 0.72), rgba(8, 12, 22, 0.72)),
-    url("images/topbar-bg.jpg") center/cover no-repeat;
+
+  /* IMAGE + OVERLAY */
+  background-color: #121a2b;
+  background-image:
+    linear-gradient(rgba(8, 12, 22, 0.75), rgba(8, 12, 22, 0.75)),
+    url("./images/topbar-bg.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -29,6 +41,10 @@ header.topbar h1 {
   font-size: 2rem;
   letter-spacing: 1px;
 }
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
 
 nav {
   display: flex;
@@ -56,8 +72,12 @@ button {
 nav a:hover,
 button:hover {
   background: #2a3555;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
+
+/* ========================= */
+/* MAIN */
+/* ========================= */
 
 main {
   max-width: 1100px;
@@ -65,14 +85,22 @@ main {
   padding: 24px 18px 40px;
 }
 
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
 .card {
   background: #121a2b;
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 16px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
 }
+
+/* ========================= */
+/* GRID */
+/* ========================= */
 
 .hero-grid,
 .module-grid,
@@ -93,6 +121,10 @@ main {
   grid-template-columns: 1fr;
 }
 
+/* ========================= */
+/* MODULE LINK */
+/* ========================= */
+
 .module-link {
   display: block;
   text-decoration: none;
@@ -105,7 +137,7 @@ main {
 }
 
 .module-link:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   background: #18233a;
 }
 
@@ -113,6 +145,10 @@ main {
   margin-top: 0;
   margin-bottom: 8px;
 }
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
 
 h2,
 h3 {
@@ -132,19 +168,28 @@ ul {
   margin-bottom: 18px;
 }
 
+/* ========================= */
+/* GOOGLE FORM */
+/* ========================= */
+
 .forms-frame {
   width: 100%;
-  min-height: 900px;
+  min-height: 1200px;
   border: none;
   border-radius: 14px;
   background: white;
 }
+
+/* ========================= */
+/* CAS CONCRETS */
+/* ========================= */
 
 .case-title {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
+/* Zone code secret */
 .hidden-box {
   margin-top: 14px;
   padding: 16px;
@@ -153,6 +198,7 @@ ul {
   border: 1px dashed rgba(255,255,255,0.15);
 }
 
+/* Contenu caché */
 .hidden-content {
   display: none;
   margin-top: 12px;
@@ -165,6 +211,7 @@ ul {
   display: block;
 }
 
+/* Input code */
 input[type="password"] {
   width: 100%;
   max-width: 280px;
@@ -172,14 +219,18 @@ input[type="password"] {
   border-radius: 10px;
   border: none;
   outline: none;
-  margin-right: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
+/* Message */
 .notice {
   color: #c7d2ff;
   font-size: 0.95rem;
 }
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
 
 footer {
   text-align: center;
@@ -189,10 +240,18 @@ footer {
   background: #0e1522;
 }
 
+/* ========================= */
+/* ANIMATION */
+/* ========================= */
+
 .fade-out {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
 
 @media (max-width: 768px) {
   header.topbar h1 {
